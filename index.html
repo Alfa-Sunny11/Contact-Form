@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Add css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Get in Touch</h2>
+
+        <!-- Success Message Container -->
+        <div id="successMessage" class="hidden">
+            <span>Success!</span> Your message has been sent.
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" novalidate>
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="ALfa Sunny">
+                <div id="nameError" class="error-message">
+                    <!-- Error text injected by JS -->
+                </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <div id="emailError" class="error-message">
+                    <!-- Error text injected by JS -->
+                </div>
+            </div>
+
+            <!-- Subject Field -->
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Question about services">
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group-message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+                <div id="messageError" class="error-message">
+                    <!-- Error text injected by JS -->
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- adding JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
